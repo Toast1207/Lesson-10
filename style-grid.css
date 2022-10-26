@@ -1,0 +1,58 @@
+@supports (grid-area: auto){
+    @media screen and (min-width: 500px){
+
+    .site {
+        display: grid;
+        
+        grid-template-columns: minmax(40em, 90em) 3fr;
+
+        grid-template-rows: auto repeat(20, 2fr);
+
+        grid-gap: 1em;
+    }
+
+    .Home {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .Intro{    
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 7;
+    }
+
+    .About{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 10;
+    }
+    
+    .Work{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 18;
+       
+    }
+
+    .Sidebar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 10;
+
+    }
+
+    .Footer{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 18;
+        grid-row-end: 20;
+    }
+}
+}
